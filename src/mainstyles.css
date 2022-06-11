@@ -70,8 +70,8 @@ justify-content: center;
 /*end of banner*/
 /*produts*/
 .Products{
-    padding-top: 10px;
-    height: 92.5vh;
+    padding-top: 2%;
+   
     background-image: linear-gradient(#AEB7BF , #dfdfdf);
 
 }
@@ -80,4 +80,30 @@ justify-content: center;
     margin: 0;
     font-size: 40px;
 
+}
+.Products .prodcuts-wrapper{
+    margin-top: 2% !important;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    margin: 0 auto;
+    width: 80%;
+}
+/*single product*/
+.Product{
+    padding: 20px;
+}
+.Product .img-section img{
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 15px;
+
+}
+.Product .title-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.Product p{
+    margin-top: 0;
 }

@@ -1,9 +1,17 @@
 import '../mainstyles.css'
+import Product from './Product';
+import products from '../products-data';
 
 const Products = () => {
  return(
-   <div className='Product'>
-     <h2>Our Product</h2>
+   <div className='Products'>
+     <h2>Our Products</h2>
+     <div className='prodcuts-wrapper'>
+     {products.map((product , index)=>{
+        return <Product product={product} key={index}></Product>
+     })}
+    
+     </div>
     </div>
  )
 };
