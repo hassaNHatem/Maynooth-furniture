@@ -213,7 +213,7 @@ justify-content: center;
 }
 /*end of footer*/
 /*responsiveness*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
     .nav .nav-container .links{
         flex-basis: 100%;
          }
