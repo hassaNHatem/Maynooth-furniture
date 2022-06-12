@@ -1,9 +1,14 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
 html{
     scroll-behavior: smooth;
 }
 /*navstyling*/
 .nav{
-    
+    padding: 5px 10px;
     box-shadow: 5px 10px 8px #888888;
     background-image: linear-gradient(#dfdfdf, #aeb7bf);
     position: sticky;
@@ -17,15 +22,17 @@ html{
     color:black
 }
 .nav .nav-container{
+    
    align-items: center;
     display: flex;
     width: 80%;
     margin: 0 auto;
-    justify-content: space-between;
+    
 }
 
 .nav .nav-container .links{
-    flex-basis: 30%;
+    margin-left:2%;
+    flex-basis: 25%;
 }
 .nav .nav-container .links ul{
     font-family:'Times New Roman', Times, serif;
@@ -119,9 +126,9 @@ justify-content: center;
 .contact{
     padding-top: 2%;
     background-color:#888;
-    height: 50vh;
 }
 .contact .Contact-Wrapper{
+    height: 200px;
     margin-top: 5% !important;
     margin: 0 auto;
     width: 80%;
@@ -187,7 +194,7 @@ justify-content: center;
 .Footer{
     padding-top: 5%;
     background-color:#888;
-    height: 25.2vh;
+   
     margin: 0;
 }
 .Footer-Wrapper{
@@ -199,7 +206,30 @@ justify-content: center;
 }
 .Footer-Wrapper h4{
     margin: 0;
+    margin-bottom: 5%;
 }
 .Footer-Wrapper p{
-    line-height: 0.5;
+    line-height: 1.2;
 }
+/*end of footer*/
+/*responsiveness*/
+@media screen and (max-width: 900px) {
+    .nav .nav-container .links{
+        flex-basis: 100%;
+         }
+         .Products .prodcuts-wrapper{
+             grid-template-columns: auto auto;
+         }      
+  }
+  @media screen and (max-width: 450px) {
+         .Products .prodcuts-wrapper{
+             grid-template-columns: auto ;
+         }  
+         .Footer-Wrapper{
+             flex-direction: column;
+             align-items: center;
+             justify-content: space-between;
+text-align:center
+         }    
+
+  }
