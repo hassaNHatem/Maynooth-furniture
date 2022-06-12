@@ -7,9 +7,9 @@ const Nav = () => {
        <div className='main-logo'>  {mainlogo}</div>
        <div className='links'>
         <ul>
-          <li>Home</li>
-          <li>Products</li>
-          <li>Contact Us</li>
+          <li><a href='#home'>Home</a></li>
+          <li><a href='#products'>Products</a></li>
+          <li><a href='#contact'>Contact Us</a></li>
         </ul>
       </div>
       </div>

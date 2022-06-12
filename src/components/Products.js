@@ -4,7 +4,7 @@ import products from '../products-data';
 
 const Products = () => {
  return(
-   <div className='Products'>
+   <section id='products' className='Products'>
      <h2>Our Products</h2>
      <div className='prodcuts-wrapper'>
      {products.map((product , index)=>{
@@ -12,7 +12,7 @@ const Products = () => {
      })}
     
      </div>
-    </div>
+    </section>
  )
 };
 

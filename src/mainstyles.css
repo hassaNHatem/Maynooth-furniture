@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 /*navstyling*/
 .nav{
     
@@ -8,6 +11,10 @@
     top:0px;
     z-index: 10;
     
+}
+.nav a{
+    text-decoration: none;
+    color:black
 }
 .nav .nav-container{
    align-items: center;
@@ -106,4 +113,93 @@ justify-content: center;
 }
 .Product p{
     margin-top: 0;
+}
+/*end of products*/
+/*contact us*/
+.contact{
+    padding-top: 2%;
+    background-color:#888;
+    height: 50vh;
+}
+.contact .Contact-Wrapper{
+    margin-top: 5% !important;
+    margin: 0 auto;
+    width: 80%;
+}
+.contact h2{
+    font-family: Georgia;
+    margin:0;
+    font-size:40px
+}
+.Contact-Wrapper {
+    height: 50%;
+    display:flex;
+    justify-content: space-between;
+}
+.Contact-Wrapper .left-side{
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis:40%
+    
+}
+.Contact-Wrapper .right-side{
+    height: 100%;
+    flex-basis:50%
+}
+.Contact-Wrapper .left-side input{
+    padding: 1rem 1rem ;
+    font-size: 1.1rem;
+    width:100%;
+    border:transparent;
+    border-radius: 5px;
+    box-shadow: 5px 10px 8px #888888;
+}
+.Contact-Wrapper .left-side input:focus{
+    border:0;
+    outline:0
+}
+.Contact-Wrapper .left-side input::placeholder{
+    font-size: 15px;
+    text-align: left;
+    
+}
+.Contact-Wrapper .right-side textarea{
+    resize:none;
+    height: 100%;
+    width: 100%;
+    border:transparent;
+    border-radius: 5px;
+    font-size:1.1rem;
+    box-shadow: 5px 10px 8px #888888;
+
+}
+.Contact-Wrapper .right-side textarea:focus{
+    border: 0;
+    outline: 0;
+}
+.Contact-Wrapper .right-side textarea::placeholder{
+    padding:0.5rem 1rem
+}
+/*end of contact us*/
+/*footer*/
+.Footer{
+    padding-top: 5%;
+    background-color:#888;
+    height: 25.2vh;
+    margin: 0;
+}
+.Footer-Wrapper{
+    text-align: start;
+    display:flex;
+    justify-content: space-between;
+    width: 80%;
+    margin:0 auto;
+}
+.Footer-Wrapper h4{
+    margin: 0;
+}
+.Footer-Wrapper p{
+    line-height: 0.5;
 }
